@@ -1,3 +1,11 @@
+# proxy contract
+
+- Hardhat
+- OpenZeppelin Upgrades plugin (for Hardhat)
+- Box.sol, BoxV2, BoxV3, BoxV4
+- unit test
+- localhost & ropsten
+
 # Advanced Sample Hardhat Project
 
 This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
