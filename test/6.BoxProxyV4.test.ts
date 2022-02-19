@@ -33,6 +33,7 @@ describe("Box (proxy) V4 with getName", function () {
 
   it("should setName and getName correctly in V4", async function () {
     //name() removed, getName() now
+    // expect(boxV4).to.not.have.own.property("name")
     expect(boxV4.name).to.be.undefined
     expect(await boxV4.getName()).to.equal("Name: ")
     
