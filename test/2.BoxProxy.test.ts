@@ -1,4 +1,4 @@
-// test/BoxProxy.test.ts
+// test/2.BoxProxy.test.ts
 import { expect } from "chai"
 import { ethers, upgrades } from "hardhat"
 import { Contract, BigNumber } from "ethers"
