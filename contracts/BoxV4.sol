@@ -14,6 +14,7 @@ contract BoxV4 is BoxV2{
     }
 
    function getName() public view returns(string memory){
-      return string(abi.encodePacked("Name: ",name));
+    //   return string(abi.encodePacked("Name: ",name));
+      return string(bytes.concat("Name: ", bytes(name)));
     }
 }
