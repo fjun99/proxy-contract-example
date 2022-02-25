@@ -17,7 +17,7 @@ contract BoxV4 is BoxV2{
     //   return string(abi.encodePacked("Name: ",name));
       // return string(bytes.concat("Name: ", bytes(name)));
 
-      // Solidity 0.8.12
+      // Solidity 0.8.12   String concatenation
       return string.concat("Name: ", name);
     }
 }
