@@ -8,7 +8,7 @@ describe("Box (proxy)", function () {
 
   beforeEach(async function () {
     const Box = await ethers.getContractFactory("Box")
-    //initilize with 42
+    //initialize with 42
     box = await upgrades.deployProxy(Box, [42], {initializer: 'store'})
     })
 
