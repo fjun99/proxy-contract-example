@@ -11,7 +11,7 @@ describe("Box (proxy) V2", function () {
     const Box = await ethers.getContractFactory("Box")
     const BoxV2 = await ethers.getContractFactory("BoxV2")
 
-    //initilize with 42
+    //initialize with 42
     box = await upgrades.deployProxy(Box, [42], {initializer: 'store'})
     // console.log(box.address," box/proxy")
     // console.log(await upgrades.erc1967.getImplementationAddress(box.address)," getImplementationAddress")
