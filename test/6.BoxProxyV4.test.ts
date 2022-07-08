@@ -15,7 +15,7 @@ describe("Box (proxy) V4 with getName", function () {
     const BoxV3 =  await ethers.getContractFactory("BoxV3")
     const BoxV4 =  await ethers.getContractFactory("BoxV4")
 
-    //initilize with 42
+    //initialize with 42
     box = await upgrades.deployProxy(Box, [42], {initializer: 'store'})
     boxV2 = await upgrades.upgradeProxy(box.address, BoxV2)
     boxV3 = await upgrades.upgradeProxy(box.address, BoxV3)
